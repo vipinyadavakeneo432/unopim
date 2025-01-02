@@ -18,6 +18,10 @@ class EventServiceProvider extends ServiceProvider
         'data_transfer.imports.completed' => [
             'Webkul\Notification\Listeners\SendNotificationListener@sendNotification',
         ],
+
+        'data_transfer.import.validate.state_failed' => [
+            'Webkul\Notification\Listeners\SendNotificationListener@sendNotification',
+        ],
     ];
 
     /**
